@@ -10,6 +10,7 @@ $ ssh -Y *******@discovery7.dartmouth.edu
 ```
 $ man srun
 ```
+
 ## 2. Set working directory
 
 ## 3. After configuring files, run the interactive mode
@@ -58,4 +59,13 @@ $ sinfo
 If running on the cluster, please edit the cluster.json config file to match your cluster configuration. Once complete, submit the given sbatch file to the cluster.
 ```
 $ sbatch snakemake.sbatch
+```
+## Checking the hostname
+```
+$ hostname
+discovery7.hpcc.dartmouth.edu
+```
+Jobs submitted with srun –pty /bin/bash will be assigned the cluster default values of 1 CPU and 1024MB of memory. The account must also be specified; the job will not run otherwise. If additional resources are required, they can be requested as options to the srun command. The following example job is assigned 2 nodes with 2 CPUS and 4GB of memory each:
+```
+srun --nodes=2 --ntasks-per-node=4 --mem-per-cpu=1GB --cpus-per-task=1 --pty /bin/bash
 ```
