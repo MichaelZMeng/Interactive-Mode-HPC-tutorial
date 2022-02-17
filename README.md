@@ -1,7 +1,7 @@
 ## Interactive-Mode-HPC-tutorial
 Interactive Mode (HPC) tutorial on Bash
 
-## 1. Sign in your Discovery7 account
+## 1. Sign in Discovery7 account
 ```
 $ ssh -Y *******@discovery7.dartmouth.edu
 ```
