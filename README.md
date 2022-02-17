@@ -10,9 +10,9 @@ $ ssh -Y *******@discovery7.dartmouth.edu
 ```
 $ man srun
 ```
-## 2. Set your desired working directory
+## 2. Set working directory
 
-## 3. After configuring your files, run the interactive mode
+## 3. After configuring files, run the interactive mode
 ```
 $ srun --pty /bin/bash
 ```
