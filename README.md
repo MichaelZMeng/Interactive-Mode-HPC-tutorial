@@ -54,3 +54,8 @@ $ squeue
 ```
 $ sinfo
 ```
+## SLURM
+If running on the cluster, please edit the cluster.json config file to match your cluster configuration. Once complete, submit the given sbatch file to the cluster.
+```
+$ sbatch snakemake.sbatch
+```
